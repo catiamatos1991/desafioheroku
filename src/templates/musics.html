@@ -3,8 +3,10 @@
 <html>
 	<head>
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-		<title>Musicstore Website Template | artists</title>
-		<link href="{% static 'css/style.css' %}" rel="stylesheet" type="text/css"  media="all" />
+		<title>Musicstore Website Template | Musics</title>
+        <link rel="shortcut icon" type="image/png" href="{% static 'img/favicon.jpg' %}"/>
+
+        <link href="{% static 'css/style.css' %}" rel="stylesheet" type="text/css"  media="all" />
 		<link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
 	</head>
 	<body>
@@ -15,7 +17,7 @@
 				<div class="top-header-left">
 					<ul>
 						<li class="active"><a href="#">Home</a></li>
-						<li><a href="musics">Musics</a></li>
+						<li><a href="/musics">Musics</a></li>
 			
 					</ul>
 				</div>
@@ -31,13 +33,9 @@
 			<div class="clear"> </div>
 			<div class="sub-header">
 				<div class="logo">
-					<a href="index"><img src="{% static 'img/logo.png' %}" title="logo" /></a>
+					<a href="/"><img src="{% static 'img/logo.png' %}" title="logo" /></a>
 				</div>
-				<div class="sub-header-center">
-					<form>
-						<input type="text"><input type="submit"  value="search" />
-					</form>
-				</div>
+
 				<div class="sub-header-right">
 					<ul>
 						<li><a href="#">log in</a></li>
@@ -49,9 +47,9 @@
 			<div class="clear"> </div>
 			<div class="top-nav">
 				<ul>
-					<li class="active1"><a href="index">Home</a></li>
-					<li><a href="myplaylist">Favorites</a></li>
-					<li><a href="artists">Musics</a></li>
+					<li class="active1"><a href="/index">Home</a></li>
+					<li><a href="/myplaylist">Favorites</a></li>
+					<li><a href="/musics">Musics</a></li>
 					<div class="clear"> </div>
 				</ul>
 			</div>
@@ -65,56 +63,46 @@
 						<div class="cartires-grids">
 							<div class="cartire-grid">
 								<div class="cartire-grid-img">
-									<img src="{% static 'img/a1.jpg' %}" title="tries" />
+									<img src="{% static 'img/a1.jpg' %}" title="Gubo's Boyz" />
 								</div>
 								<div class="cartire-grid-info">
 									<ul>
-										<li><span>New</span> |&nbsp;&nbsp;Available !</li>
+										<li><span>Gubo's Boyz</span> |&nbsp;&nbsp;Add now !</li>
 									</ul>
-									<h3>Fondmetal 7500</h3>
-									<p>Artist Name</p>
+									<h3></h3>
+									<p>Gipsy Woman<a href="#"><div class="cartire-grid-cartinfo">Add to Playlist</div></a></p><br />
+                                    <p>fish man<a href="#"><div class="cartire-grid-cartinfo">Add to Playlist</div></a></p><br />
+                                    <p>coyote bone<a href="#"><div class="cartire-grid-cartinfo">Add to Playlist</div></a></p><br />
+
 								</div>
 								<div class="cartire-grid-cartinfo">
 									<h4>Add to your Playlist!</h4>							
-									<a href="singlepage.html">Add to Playlist</a><br />
+									<a href="#">Add all to Playlist</a><br />
 								</div>
-								<div class="clear"> </div>
+								<div class="clear">
+                               </div>
 							</div><br />
 							<div class="cartire-grid">
 								<div class="cartire-grid-img">
-									<img src="{% static 'img/a3.jpg' %}" title="tries" />
+									<img src="{% static 'img/a5.jpg' %}" title="Eola" />
 								</div>
 								<div class="cartire-grid-info">
 									<ul>
-										<li><span>New</span> |&nbsp;&nbsp;Available !</li>
+										<li><span>Eola</span> |&nbsp;&nbsp;Add now !</li>
 									</ul>
-									<h3>Fondmetal 7500</h3>
-									<p>Artist Name</p>
-								</div>
-								<div class="cartire-grid-cartinfo">
-									<h4>Add to your Playlist!</h4>							
-									<a href="singlepage.html">Add to Playlist</a><br />
-								</div>
-								<div class="clear"> </div>
-							</div><br />
-							<div class="cartire-grid">
-								<div class="cartire-grid-img">
-									<img src="{% static 'img/g6.jpg' %}" title="tries" />
-								</div>
-								<div class="cartire-grid-info">
-									<ul>
-										<li><span>New</span> |&nbsp;&nbsp;Available !</li>
-									</ul>
-									<h3>Fondmetal 7500</h3>
-									<p>Artist Name</p>
-								</div>
-								<div class="cartire-grid-cartinfo">
-									<h4>Add to your Playlist!</h4>							
-									<a href="singlepage.html">Add to Playlist</a><br />
-								</div>
-								<div class="clear"> </div>
-							</div><br />
-						</div>
+                                    <p>Secret Place<a href="#"><div class="cartire-grid-cartinfo">Add to Playlist</div></a></p><br />
+                                    <p>Mile Post 1<a href="#"><div class="cartire-grid-cartinfo">Add to Playlist</div></a></p><br />
+                                    <p>Celeste<a href="#"><div class="cartire-grid-cartinfo">Add to Playlist</div></a></p><br />
+
+                                    </div>
+                                    <div class="cartire-grid-cartinfo">
+                                        <h4>Add to your Playlist!</h4>
+                                        <a href="#">Add all to Playlist</a><br />
+                                    </div>
+                                    <div class="clear">
+                                    </div>
+                                    </div><br />
+
 					</div>
 					<!--End-cartires-page---->
 				</div>

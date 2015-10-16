@@ -3,8 +3,10 @@
 <html>
 	<head>
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-		<title>Musicstore Website Template | Home :: W3layouts</title>
-		<link href="{% static 'css/style.css' %}" rel="stylesheet" type="text/css"  media="all" />
+        <title>Musicstore Website Template | Home</title>
+        <link rel="shortcut icon" type="image/png" href="{% static 'img/favicon.jpg' %}"/>
+
+        <link href="{% static 'css/style.css' %}" rel="stylesheet" type="text/css"  media="all" />
 		<link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
 		<link rel="stylesheet" href="{% static 'css/responsiveslides.css' %}">
 		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
@@ -30,13 +32,13 @@
 				<div class="top-header-left">
 					<ul>
 						<li class="active"><a href="#">Home</a></li>
-						<li><a href="myplaylist">Plalist</a></li>
+						<li><a href="/myplaylist">Plalist</a></li>
 						
 					</ul>
 				</div>
 				<div class="top-header-right">
 					<ul>
-						<li><a href="profile">{{  user }}</a></li>
+						<li><a href="/profile">{{  user }}</a></li>
 						</li>
 					</ul>
 				</div>
@@ -45,14 +47,14 @@
 			<div class="clear"> </div>
 			<div class="sub-header">
 				<div class="logo">
-					<a href="home"><img src="{% static 'img/logo.png' %}" title="logo" /></a>
+					<a href="/"><img src="{% static 'img/logo.png' %}" title="logo" /></a>
 				</div>
 				
 				<div class="sub-header-right">
 					<ul>
 						
 						<li><a href="">logout</a></li>
-						<li><a href="profile">Your account</a></li>
+						<li><a href="/profile">Your account</a></li>
 
 					</ul>
 				</div>
@@ -62,108 +64,80 @@
 			<div class="top-nav">
 				<ul>
 					<li class="active1"><a href="home">Home</a></li>
-					<li><a href="myplaylist">Favorites</a></li>
-					<li><a href="artists">Musics</a></li>
+					<li><a href="/myplaylist">Favorites</a></li>
+					<li><a href="/musics">Musics</a></li>
 					<div class="clear"> </div>
 				</ul>
 			</div>
 			<!---end-top-header--->
 			<!---End-header--->
 			</div>
-			
-				<!--start-image-slider---->
-					<div class="image-slider">
-						<!-- Slideshow 1 -->
-					    <ul class="rslides" id="slider1">
-					      <li><img src="{% static 'img/slider1.jpg' %}" alt=""></li>
-					      <li><img src="{% static 'img/slider2.jpg' %}" alt=""></li>
-					      <li><img src="{% static 'img/slider3.jpg' %}" alt=""></li>
-					    </ul>
-						 <!-- Slideshow 2 -->
-					</div>
-					<!--End-image-slider---->
-				<div class="content">
-					<div class="products-box">
-					<div class="products">
-						<h5><span>FEATURED</span> PRODUCTS</h5>
-						<div class="section group">
-							<div class="grid_1_of_5 images_1_of_5">
-								 <img src="{% static 'img/a4.jpg' %}">
-								 <h3>Title </h3>
-								 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, in reprehenderit.</p>
-								 <h4>Artist Name</h4>
-							     <div class="button"><span><a href="singlepage">Read More</a></span></div>
-						   </div>
-							<div class="grid_1_of_5 images_1_of_5">
-								 <img src="{% static 'img/a5.jpg' %}">
-								 <h3>Lorem Ipsum is simply </h3>
-								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, in reprehenderit.</p>
-								<h4><label>$700.00</label>$300.00</h4>
-							     <div class="button"><span><a href="singlepage">Read More</a></span></div>
-						    </div>
-							<div class="grid_1_of_5 images_1_of_5">
-								<img src="{% static 'img/a6.jpg' %}">
-								 <h3>Lorem Ipsum is simply </h3>
-								 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, in reprehenderit.</p>
-								 <h4><label>$700.00</label>$120.00</h4>
-							     <div class="button"><span><a href="singlepage">Read More</a></span></div>
-							</div>
-							<div class="grid_1_of_5 images_1_of_5">
-								 <img src="{% static 'img/a7.jpg' %}">
-								 <h3>Lorem Ipsum is simply </h3>
-								 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, in reprehenderit.</p>
-								 <h4><label>$700.00</label>$500.00</h4>
-							     <div class="button"><span><a href="singlepage">Read More</a></span></div>
-							</div>
-							<div class="grid_1_of_5 images_1_of_5">
-								 <img src="{% static 'img/a8.jpg' %}">
-								 <h3>Lorem Ipsum is simply</h3>
-								 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, in reprehenderit.</p>
-								 <h4><label>$600.00</label>$120.00</h4>
-							     <div class="button"><span><a href="singlepage">Read More</a></span></div>
-							</div>
-						</div>
-						<a class="button1" href="#">View all</a>
-						<div class="clear"> </div>
-					</div>
-					<div class="products products-secondbox">
-						<h5><span>Our</span> Specials</h5>
-						<div class="section group">
-							<div class="grid_1_of_5 images_1_of_5">
-								 <img src="{% static 'img/a9.jpg' %}">
-								 <h3>Lorem Ipsum is simply </h3>
-								 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, in reprehenderit.</p>
-								 <h4><span>$600.00</span>$512.00</h4>
-							     <div class="button"><span><a href="singlepage">Read More</a></span></div>
-						   </div>
-							<div class="grid_1_of_5 images_1_of_5">
-								 <img src="{% static 'img/a10.jpg' %}">
-								 <h3>Lorem Ipsum is simply </h3>
-								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, in reprehenderit.</p>
-								 <h4><span>$400.00</span>$352.00</h4>
-							     <div class="button"><span><a href="singlepage.html">Read More</a></span></div>
-						    </div>
-							<div class="grid_1_of_5 images_1_of_5">
-								<img src="{% static 'img/a11.jpg' %}">
-								 <h3>Lorem Ipsum is simply </h3>
-								 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, in reprehenderit.</p>
-								  <h4><span>$300.00</span>$202.00</h4>
-							     <div class="button"><span><a href="singlepage">Read More</a></span></div>
-							</div>
-							<div class="grid_1_of_5 images_1_of_5">
-								 <img src="{% static 'img/a12.jpg' %}">
-								 <h3>Lorem Ipsum is simply </h3>
-								 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, in reprehenderit.</p>
-								 <h4><span>$400.00</span>$322.00</h4>
-							     <div class="button"><span><a href="singlepage.html">Read More</a></span></div>
-							</div>
-							<div class="grid_1_of_5 images_1_of_5">
-								 <img src="{% static 'img/a1.jpg' %}">
-								 <h3>Lorem Ipsum is simply</h3>
-								 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, in reprehenderit.</p>
-								 <h4><span>$700.00</span>$602.00</h4>
-							     <div class="button"><span><a href="singlepage.html">Read More</a></span></div>
-							</div>
+
+            <!--start-image-slider---->
+            <div class="image-slider">
+                <!-- Slideshow 1 -->
+                <ul class="rslides" id="slider1">
+                    <li><img src="{% static 'img/slider2.jpg' %}" alt=""></li>
+                    <li><img src="{% static 'img/slider3.jpg' %}" alt=""></li>
+                    <li><img src="{% static 'img/slider1.jpg' %}" alt=""></li>
+                </ul>
+                <!-- Slideshow 2 -->
+            </div>
+            <!--End-image-slider---->
+            <div class="content">
+                <div class="products-box">
+                    <div class="products">
+                        <h5><span>Artists</span></h5>
+                        <div class="section group">
+                            <div class="grid_1_of_5 images_1_of_5">
+                                <img src="{% static 'img/a1.jpg' %}">
+                                <h3>Scroach </h3>
+                            </div>
+                            <div class="grid_1_of_5 images_1_of_5">
+                                <img src="{% static 'img/a2.jpg' %}">
+                                <h3>Steve Combs </h3>
+                            </div>
+                            <div class="grid_1_of_5 images_1_of_5">
+                                <img src="{% static 'img/a3.jpg' %}">
+                                <h3>Krestovsky </h3>
+                            </div>
+                            <div class="grid_1_of_5 images_1_of_5">
+                                <img src="{% static 'img/a4.jpg' %}">
+                                <h3>Dr Sparkles </h3>
+                            </div>
+                            <div class="grid_1_of_5 images_1_of_5">
+                                <img src="{% static 'img/a5.jpg' %}">
+                                <h3>Alex Fitch </h3>
+                            </div>
+                            <div class="grid_1_of_5 images_1_of_5">
+                                <img src="{% static 'img/a6.jpg' %}">
+                                <h3>Boonesboro </h3>
+                            </div>
+
+                        </div>
+
+                    </div>
+                    <a class="button1" href="#">View all</a>
+                    <div class="clear"> </div>
+                </div>
+                <div class="products products-secondbox">
+                    <h5><span>Featured</span> Albuns</h5>
+                    <div class="section group">
+                        <div class="grid_1_of_5 images_1_of_5">
+                            <img src="{% static 'img/c3.jpg' %}">
+                            <h3>If Not You </h3>
+                            <p>Krestovsky</p>
+                        </div>
+                        <div class="grid_1_of_5 images_1_of_5">
+                            <img src="{% static 'img/c4.jpg' %}">
+                            <h3>Hello, Good Evening and Yes </h3>
+                            <p>Dr Sparkles</p>
+                        </div>
+                        <div class="grid_1_of_5 images_1_of_5">
+                            <img src="{% static 'img/c5.jpg' %}">
+                            <h3>Eola </h3>
+                            <p>Alex Fitch</p>
+                        </div>
 							<a class="button1" href="#">View all</a>
 						<div class="clear"> </div>
 						</div>

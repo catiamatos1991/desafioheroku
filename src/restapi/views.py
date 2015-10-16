@@ -60,6 +60,9 @@ def home(request):
 def musics(request):
     return render_to_response("musics.html")
 
+def manage(request):
+    return render_to_response("manage.html")
+
 def playlist(request):
     return render_to_response("playlist.html")
 
